@@ -6,14 +6,28 @@ import Header from '../components/Header.astro';
 
 <BaseLayout title="minimal-starter-conquestace-template" description="base">
   <section class="text-center py-20">
-    <h1 class="text-5xl font-extrabold text-mathblue mb-6 tracking-tight">
+    <h1 class="text-5xl font-extrabold text-primary mb-6 tracking-tight">
       minimal-starter-conquestace-template
     </h1>
-    <p class="text-xl text-lightblue max-w-2xl mx-auto mb-10">
+    <p class="text-xl text-subtle max-w-2xl mx-auto mb-10">
     </p>
 
-    <button class="bg-slatecard text-lightblue hover:bg-hoverblue transition-all duration-300 px-6 py-3 rounded-lg font-semibold tracking-wide">
-      <a href="https://github.com/ConquestAce/minimal-starter-conquestace-template" target="_blank" rel="noopener noreferrer">Enter the glitch </a>
-    </button>
+  <div class="flex justify-center gap-4">
+      <a
+        href="https://github.com/conquestace"
+        class="bg-surface text-primary hover:bg-hover transition-all duration-300 px-6 py-3 rounded-lg font-semibold tracking-wide"
+      >
+        Enter the Glitch
+      </a>
+    </div>
+
+  <div class="flex justify-center gap-4">
+      <a
+        href="/theme-playground"
+        class="bg-surface text-primary hover:bg-hover transition-all duration-300 px-6 py-3 rounded-lg font-semibold tracking-wide"
+      >
+        Theme Playground
+      </a>
+    </div>
   </section>
 </BaseLayout>
