@@ -1,9 +1,10 @@
 ---
 // ThemeSelector.astro
+const id = Math.random().toString(36).slice(2,8);
 ---
 <div class="relative inline-block">
   <button
-    onclick="toggleThemeMenu()"
+    onclick={`toggleThemeMenu('${id}')`}
     class="w-10 h-10 p-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
     aria-label="Open theme menu"
   >
@@ -22,7 +23,7 @@
 
   <!-- Theme menu -->
   <ul
-    id="theme-menu"
+    id={`theme-menu-${id}`}
     class="hidden absolute right-0 mt-2 w-48 bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text)] rounded shadow-md z-10"
   >
     {[
