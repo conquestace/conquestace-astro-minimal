@@ -108,6 +108,10 @@
 }
 
 .theme-light {
+  --color-bg: #ffffff;
+  --color-surface: #f3f4f6;
+  --color-subtle: #3b82f6;
+  --color-hover: #1d4ed8;
   --color-primary: #2274a5;
   --color-secondary: #2274a5;
   --color-accent: #22d3ee;
@@ -122,6 +126,10 @@
 }
 
 .theme-dark {
+  --color-bg: #21252d;
+  --color-surface: #1a1e2a;
+  --color-subtle: #bfdbfe;
+  --color-hover: #60a5fa;
   --color-primary: #ec4899;
   --color-secondary: #2274a5;
   --color-accent: #22d3ee;

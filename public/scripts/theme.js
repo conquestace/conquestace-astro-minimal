@@ -60,19 +60,19 @@ function initTheme() {
   setTheme(active);
 }
 
-function toggleThemeMenu() {
-  const menu = document.getElementById('theme-menu');
+function toggleThemeMenu(id) {
+  const menu = document.getElementById(`theme-menu-${id}`);
   if (!menu) return;
   menu.classList.toggle('hidden');
 }
 
 // Auto-close dropdown on outside click
 document.addEventListener('click', (e) => {
-  const menu = document.getElementById('theme-menu');
-  if (!menu || menu.classList.contains('hidden')) return;
-  if (!menu.parentElement.contains(e.target)) {
-    menu.classList.add('hidden');
-  }
+  document.querySelectorAll('[id^="theme-menu-"]').forEach(menu => {
+    if (!menu.classList.contains('hidden') && !menu.parentElement.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
 });
 
 // Watch for dropdown change
