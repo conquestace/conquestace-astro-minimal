@@ -44,14 +44,15 @@ function toggleLightDark() {
 }
 
 function updateIcon(theme) {
-  const sun = document.getElementById('icon-sun');
-  const moon = document.getElementById('icon-moon');
-
-  if (!sun || !moon) return;
-
   const isLight = theme.includes('light') || theme === 'light';
-  sun.style.opacity = isLight ? '1' : '0';
-  moon.style.opacity = isLight ? '0' : '1';
+
+  document.querySelectorAll('[id^="icon-sun-"]').forEach(el => {
+    el.style.opacity = isLight ? '1' : '0';
+  });
+
+  document.querySelectorAll('[id^="icon-moon-"]').forEach(el => {
+    el.style.opacity = isLight ? '0' : '1';
+  });
 }
 
 function initTheme() {
