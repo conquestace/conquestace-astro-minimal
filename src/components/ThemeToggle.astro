@@ -48,14 +48,14 @@ const id = Math.random().toString(36).slice(2,8);
 
 <!-- Light/Dark.astro -->
 <button
-  id="theme-toggle-btn"
+  id={`theme-toggle-btn-${id}`}
   onclick="toggleLightDark()"
   class="relative w-10 h-10 p-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
   aria-label="Toggle Light/Dark"
 >
   <!-- Sun icon (Light Mode) -->
   <svg
-    id="icon-sun"
+    id={`icon-sun-${id}`}
     class="absolute inset-0 w-6 h-6 m-auto transition-opacity duration-300 opacity-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ const id = Math.random().toString(36).slice(2,8);
 
   <!-- Moon icon (Dark Mode) -->
   <svg
-    id="icon-moon"
+    id={`icon-moon-${id}`}
     class="absolute inset-0 w-6 h-6 m-auto transition-opacity duration-300 opacity-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
