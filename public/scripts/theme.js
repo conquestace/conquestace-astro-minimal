@@ -87,3 +87,4 @@ if (typeof window !== 'undefined') {
   window.toggleThemeMenu = toggleThemeMenu;
   window.addEventListener('DOMContentLoaded', initTheme);
 }
+
