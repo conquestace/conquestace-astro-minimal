@@ -9,15 +9,17 @@
     "astro": "astro",
     "bin": {
       "conquestace-astro-minimal": "./index.js"
-    }
+    },
+    "extract": "node scripts/extractMetadata.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.8.0",
+    "daisyui": "^5.0.43",
     "degit": "^2.8.4",
+    "exiftool-vendored": "^30.2.0",
     "netlify": "^22.1.3",
-    "tailwindcss": "^4.1.7",
-    "daisyui": "^5.0.43"
+    "tailwindcss": "^4.1.7"
   },
   "description": "A cryptic, anarchy-themed starter website powered by [Astro](https://astro.build) and styled with [Tailwind CSS](https://tailwindcss.com). Built for speed, modularity, and originality — this template is a perfect base for experimental, glitch-inspired, or dark-themed sites.",
   "main": "index.js",
